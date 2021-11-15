@@ -47,7 +47,73 @@ print(type(a))
 
 
 #Day 2.1 Data Types Excercise
-two_digit_number = input("Type a two digit number: ")
-a=int(two_digit_number[0])
-b=int(two_digit_number[1])
-print(a+b)
+print ("For an example number 56 the program calculates 11")
+two_digit_number = "56"
+print(int(two_digit_number[0])+int(two_digit_number[1]))
+
+#Math
+print(2+2)
+print(type(2+2))
+print(2-9)
+print(type(2-9))
+print(2*4)
+print(type(2*4))
+print(6/2)
+print(type(6/2))
+print(3**3)
+print(type(3**3))
+
+#PEMDAS
+# ()
+# **
+# * /
+# + -
+# left before right
+
+#short example to get 4 with only +-*/ used exatly one time and only 3 as number 4 time
+print (((3-3)+3)/3+3)
+
+#Code challange 2.2
+
+# 🚨 Don't change the code below 👇
+height = 1.85 # input("enter your height in m: ")
+weight = 96 # input("enter your weight in kg: ")
+# 🚨 Don't change the code above 👆
+
+#Write your code below this line 👇
+print("BMI:")
+print(int(float(weight)/ float(height)**2))
+
+# How to deal with float and rounding
+
+#Float rounded to full decimal
+print(round(8 / 3))
+#Float rounded to the place after decimal
+print(round(8/3,2))
+#just take the decimal part of the division --> gives int
+print(8 // 3)
+result = 4/2
+result /= 2
+print(result)
+result += 1
+result *=5
+print (result)
+
+score = 0
+len = 1.8
+isWinning = True
+
+# f string
+print(f"your score is {score}, with length {len} and your winning is {isWinning}")
+
+# Code challenge
+# 🚨 Don't change the code below 👇
+age = 67 #input("What is your current age?")
+# 🚨 Don't change the code above 👆
+
+#Write your code below this line 👇
+age_as_int = int(age)
+days = (90*365) - (age_as_int*365)
+weeks = (90*52) - (age_as_int*52)
+months = (90*12) - (age_as_int*12)
+print(f"You have {days} days, {weeks} weeks, and {months} months left.")
