@@ -64,7 +64,7 @@ else:
 
 print("Welcome to the rollercoaster!")
 height = 120#int(input("What is your hight in cm? "))
-age = 18 #int(int(input("What is your age? ")))
+age = 45 #int(int(input("What is your age? ")))
 bill = 0
 #if else and comparater
 if height >= 120:
@@ -75,6 +75,8 @@ if height >= 120:
     elif age <= 18:
         print(f"As you are {age} years old, you have to pay 7$")
         bill += 7
+    elif age >= 45 and age <= 55:
+        print(f"As you are between 45 and 55 years old, you can ride for free")
     else:
         print(f"As you are {age} years old, you have to pay 12$")
         bill +=12
@@ -92,9 +94,9 @@ if height == 120:
     #Challange 3.4
     # 🚨 Don't change the code below 👇
 print("Welcome to Python Pizza Deliveries!")
-size = input("What size pizza do you want? S, M, or L ")
-add_pepperoni = input("Do you want pepperoni? Y or N ")
-extra_cheese = input("Do you want extra cheese? Y or N ")
+size = "M" # input("What size pizza do you want? S, M, or L ")
+add_pepperoni = "Y" # input("Do you want pepperoni? Y or N ")
+extra_cheese = "Y" # input("Do you want extra cheese? Y or N ")
 # 🚨 Don't change the code above 👆
 
 #Write your code below this line 👇
@@ -114,5 +116,25 @@ else:
 if extra_cheese == "Y":
     bill += 1
 
-
 print(f"Your final bill is: ${bill}")
+
+# Challange 3.5
+# 🚨 Don't change the code below 👇
+print("Welcome to the Love Calculator!")
+name1 = "Donald Trump" #input("What is your name? \n")
+name2 = "Angela Merkel" #input("What is their name? \n")
+# 🚨 Don't change the code above 👆
+
+#Write your code below this line 👇
+name1 = name1.lower()
+name2 = name2.lower()
+number_true = name1.count("t") + name1.count("r")+ name1.count("u") + name1.count("e") + name2.count("t") + name2.count("r")+ name2.count("u") + name2.count("e")
+number_love = name1.count("l") + name1.count("o")+ name1.count("v") + name1.count("e") + name2.count("l") + name2.count("o")+ name2.count("v") + name2.count("e")
+love_percent = number_true*10+number_love
+
+if love_percent < 10 or love_percent > 90:
+    print(f"Your score is {love_percent}, you go together like coke and mentos.")
+elif love_percent >= 40 and love_percent <= 50:
+    print(f"Your score is {love_percent}, you are alright together.")
+else:
+    print(f"Your score is {love_percent}.")
