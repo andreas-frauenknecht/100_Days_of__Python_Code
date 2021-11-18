@@ -48,7 +48,7 @@ else:
 
 # Exercise 3.3 Leap year
 
-year = int(input("Which year do you want to check? "))
+year = 1200 #int(input("Which year do you want to check? "))
 
 if year%4 == 0:
     if year%100 != 0:
@@ -60,4 +60,59 @@ if year%4 == 0:
             print("not a leap year")
 else:
     print("not a leap year")
+
+
+print("Welcome to the rollercoaster!")
+height = 120#int(input("What is your hight in cm? "))
+age = 18 #int(int(input("What is your age? ")))
+bill = 0
+#if else and comparater
+if height >= 120:
+    print("You can ride the rollercoaster!")
+    if age < 12:
+        print(f"As you are {age} years old, you have to pay 5$")
+        bill += 5
+    elif age <= 18:
+        print(f"As you are {age} years old, you have to pay 7$")
+        bill += 7
+    else:
+        print(f"As you are {age} years old, you have to pay 12$")
+        bill +=12
+    wants_photo = "Y" #input("Do you want a photo taken? Y or N. ")
+    if wants_photo == "Y":
+        bill += 3
     
+    print(f"You final bill is: ${bill}")
+
+else:
+    print("Sorry you have to be higher than 120cm")
+if height == 120:
+    print("You are only 120 cm please ride with an adult.")
+
+    #Challange 3.4
+    # 🚨 Don't change the code below 👇
+print("Welcome to Python Pizza Deliveries!")
+size = input("What size pizza do you want? S, M, or L ")
+add_pepperoni = input("Do you want pepperoni? Y or N ")
+extra_cheese = input("Do you want extra cheese? Y or N ")
+# 🚨 Don't change the code above 👆
+
+#Write your code below this line 👇
+bill = 0
+if size == "S":
+    bill += 15
+    if add_pepperoni=="Y":
+        bill += 2
+elif size == "M":
+    bill +=20
+    if add_pepperoni=="Y":
+        bill += 3
+else:
+    bill +=25
+    if add_pepperoni=="Y":
+        bill += 3
+if extra_cheese == "Y":
+    bill += 1
+
+
+print(f"Your final bill is: ${bill}")
